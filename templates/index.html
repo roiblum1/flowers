@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/flowers.png') }}" type="image/x-icon">
+    <title>Special Blessing</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>R</span>
+        <span>o</span>
+        <span>m</span>
+        <span>i</span>
+    </div>
+    <div class="description">
+        <span>שעמם לי ורציתי לאחל לך חג שמח</span>
+    </div>
+    <div class="blessing">
+        <p>אנחנו אמנם לא מכירים מספיק כדי שאני אשלח לך פרחים לחג</p>
+        <p>אבל זה לא אומר שלא מגיע לך כאלו</p>
+    </div>
+    <div 
+    style="padding: 10px 20px; 
+           background-color: #159faa; 
+           border: none; 
+           border-radius: 5px; 
+           cursor: pointer; 
+           transition: all 0.3s;"
+    onmouseover="this.style.backgroundColor='#39c6d6'; 
+                 this.style.transform='scale(1.05)'"
+    onmouseout="this.style.backgroundColor='#159faa'; 
+                this.style.transform='scale(1)'"
+  >
+    <a href="{{ url_for('flowers') }}" 
+       style="color: white; 
+              text-decoration: none; 
+              font-weight: bold;">
+      הנה הפרחים שלך
+    </a>
+  </div>
+  
+</body>
+</html>
