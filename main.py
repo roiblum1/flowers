@@ -17,5 +17,9 @@ def apology():
     print(f"Template folder: {os.path.join(app.root_path, 'templates')}")
     return render_template('index.html')
 
+@app.route('/more', endpoint='more')
+def flowers2():
+    return render_template('flower2.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
