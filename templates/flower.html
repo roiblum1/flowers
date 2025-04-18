@@ -96,11 +96,12 @@
     </style>
 </head>
 <body>
-    <img src="{{ url_for('static', filename='img/rope.jpg') }}" class="side-image-left" alt="Left decorative rope">
-    <img src="{{ url_for('static', filename='img/rope.jpg') }}" class="side-image-right" alt="Right decorative rope">   
-    <div class="blessing-overlay">
-        <div class="blessing-text"> לרומי</div>
-    </div>
+  <div class="blessing-overlay">
+    <div class="blessing-text"> לרומי</div>
+    <button class="back-button">
+        <a href="{{ url_for('apology') }}">לקרוא הודעה</a>
+    </button>
+  </div>  
 
     <div class="night"></div>
     <div class="flowers">
