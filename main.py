@@ -7,19 +7,21 @@ app = Flask(__name__)
 def flowers():
     # Print debugging information
     print("Rendering flower.html template")
-    print(f"Template folder: {os.path.join(app.root_path, 'templates')}")
     return render_template('flower.html')
 
 @app.route('/apology')
 def apology():
     # Print debugging information
     print("Rendering index.html template")
-    print(f"Template folder: {os.path.join(app.root_path, 'templates')}")
     return render_template('index.html')
 
 @app.route('/more', endpoint='more')
 def flowers2():
     return render_template('flower2.html')
+
+@app.route('/heart', endpoint='heart')
+def heart():
+    return render_template('heart.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
